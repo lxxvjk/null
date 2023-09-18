@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网页</title>
+    <style>
+        body {
+            background-color: #16b2eb; /* 设置背景颜色 */
+            background-image: url('https://th.bing.com/th/id/R.dc8c3f6131f77c0f7a95c48f11727242?rik=oZ%2fUcSSJMsG6LQ&pid=ImgRaw&r=0'); /* 设置背景图像的URL */
+            background-size: cover; /* 调整背景图像的尺寸以覆盖整个屏幕 */
+            background-repeat: no-repeat; /* 防止背景图像重复 */
+            /* 可以根据需要添加其他背景属性 */
+        }
+
+        .scroll-container {
+            height: auto; /* 设置容器的高度为自动，以适应内容 */
+            overflow-y: scroll; /* 允许垂直滚动 */
+            display: flex; /* 将内容以横向排列 */
+            flex-direction: column; /* 将内容纵向排列 */
+            justify-content: center; /* 在容器中垂直居中对齐内容 */
+            align-items: center; /* 在容器中水平居中对齐内容 */
+            text-align: center; /* 将内容文本居中对齐 */
+        }
+
+        h1 {
+            margin-top: 20px; /* 向上移动标题 20px */
+            color: rgb(250, 249, 249); /* 设置字体颜色为炫彩的红色 */
+            font-family: "宋体", sans-serif; /* 设置字体为宋体，如果无法显示则使用 sans-serif 作为备用字体 */
+            font-size: 36px; /* 设置字体大小为40像素 */
+            animation: bounce 2s infinite; /* 添加动画效果 */
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px); /* 在动画的中间位置向上平移标题 */
+            }
+        }
+
+        .widget {
+            text-align: left; /* 设置文本左对齐 */
+            margin: 10px; /* 添加小部件之间的间距 */
+            display: flex; /* 将小部件的内容以横向排列 */
+            align-items: center; /* 在小部件中垂直居中对齐内容 */
+            width: 80%; /* 设置小部件的宽度为80% */
+            max-width: 600px; /* 设置小部件的最大宽度 */
+            margin: 10px auto; /* 自动水平居中对齐小部件 */
+        }
+
+        .widget img {
+            width: 250px; /* 设置图像宽度为100px */
+            height: 300px; /* 设置图像高度为100px */
+            border-radius: 50%; /* 设置圆形边框 */
+            margin-right: 10px; /* 设置图片与文本之间的间距 */
+        }
+
+        .widget .description {
+            font-size: 18px; /* 设置简介文本字体大小 */
+            color: #f5f2f2; /* 设置简介文本颜色 */
+        }
+    </style>
+</head>
+<body>
+    <audio controls loop>
+        <source src="https://example.com/path-to-your-music/Jung%20Kook%20_%20Latto%20-%20Seven%20(feat_%20Latto)%20-%20Explicit%20Ver_.flac.mp3" type="audio/mpeg">
+        您的浏览器不支持音频元素。
+    </audio>
+    <div class="scroll-container">
+        <h1>欢迎来到杨雯婕的网页</h1>
+        
+        <div class="widget">
+            <a href="https://www.bilibili.com/video/BV1nN41127ww/?spm_id_from=333.337.search-card.all.click&vd_source=0170b066c11e3adcd2bb02384a71964f">
+                <img src="https://pic4.zhimg.com/v2-a7596451ef70259d26b2b785a3dff299_r.jpg?source=1940ef5c" alt="SEVEN练习室">
+                <div class="description">SEVEN练习室</div>
+            </a>
+        </div>
+        
+        <div class="widget">
+            <a href="https://www.bilibili.com/video/BV17h4y1k7CY/?spm_id_from=333.788.recommend_more_video.18&vd_source=0170b066c11e3adcd2bb02384a71964f">
+                <img src="https://c-ssl.dtstatic.com/uploads/blog/202303/05/20230305130758_c8bce.thumb.1000_0.jpg" alt="小部件2">
+                <div class="description">SOMI主打曲Fast Forword练习室视频</div>
+            </a>
+        </div>
+        
+        <div class="widget">
+            <a href="https://www.bilibili.com/video/BV1VD4y1h7az/?spm_id_from=333.337.search-card.all.click&vd_source=0170b066c11e3adcd2bb02384a71964f">
+                <img src="https://k-gen.fr/wp-content/uploads/2022/08/newjeans.jpg" alt="小部件3">
+                <div class="description">Ditto MV</div>
+            </a>
+        </div>
+        
+        <div class="widget">
+            <a href="https://www.bilibili.com/video/BV1sV4y1t7CR?p=2&vd_source=0170b066c11e3adcd2bb02384a71964f">
+                <img src="https://c-ssl.duitang.com/uploads/blog/202110/15/20211015185312_17a88.jpg" alt="小部件4">
+                <div class="description">Let there be love 田柾国电台</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
